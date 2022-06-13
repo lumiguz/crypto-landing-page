@@ -1,0 +1,20 @@
+/* 
+1. Position
+2. Box model
+3. Typographic
+4. Visuals
+5. Miscelaneos
+*/
+
+:root{
+    /* Colours */
+    --bitcoin-orange: #F7931A;
+    --sof-orange: #FFE9D4;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --black: #201E1C;
+    --warm-black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
