@@ -88,3 +88,42 @@ header {
   margin-left: 1rem;
   background-image: url("https://i.postimg.cc/xj5tqYcW/arrow-down.png");
 }
+
+/* ----MAIN---- */
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--just-white);
+}
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.main-exchange-container--img img{
+  background-color: #80808005;
+}
+.main-exchange-container--title{
+  min-width: 28.8rem;
+  max-width: 90rem;
+  margin-top: 4.4rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.main-exchange-container--title h2{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+  color: var(--warm-black);
+}
+.main-exchange-container--title p{
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--grey);
+  margin-bottom: 4.8rem;
+}
