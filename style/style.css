@@ -92,9 +92,17 @@ header {
 /* ----MAIN---- */
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   width: 100%;
+  min-width: 32rem;
+  max-width: 90rem;
   height: auto;
+  margin: 0 auto;
   background-color: var(--just-white);
+  text-align: center;
 }
 .main-exchange-container {
   width: 100%;
@@ -103,27 +111,94 @@ main {
   padding-bottom: 3rem;
   text-align: center;
 }
-.main-exchange-container--img img{
+.main-exchange-container--img img {
   background-color: #80808005;
 }
-.main-exchange-container--title{
+.main-exchange-container--title {
+  justify-content: center;
   min-width: 28.8rem;
   max-width: 90rem;
   margin-top: 4.4rem;
   margin-right: 5%;
   margin-left: 5%;
 }
-.main-exchange-container--title h2{
+.main-exchange-container--title h2 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.6rem;
   margin-bottom: 2.4rem;
   color: var(--warm-black);
 }
-.main-exchange-container--title p{
+.main-exchange-container--title p {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: var(--grey);
   margin-bottom: 4.8rem;
+}
+.main-exchange-container--table h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: var(--bitcoin-orange);
+  margin-bottom: 1.2rem;
+}
+.main-exchange-container--table__table {
+  display: grid;
+  grid-template-columns: repeat(2, 15rem);
+  grid-auto-rows: 4rem;
+  width: 22rem;
+  min-width: 2.9rem;
+  margin: 0 auto 1.6rem auto;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.94rem;
+  font-weight: 500;
+  color: var(--grey);
+  background-color: var(--off-white);
+}
+.main-exchange-container--table__table .table--name,
+.main-exchange-container--table__table .table--price {
+  width: 90%;
+  height: 90%;
+  border: 0.2rem solid var(--just-white);
+}
+.main-exchange-container--table__table .table--name {
+  display: flex;
+  align-items: center;
+  padding-left: 1.2rem;
+}
+.main-exchange-container--table__table .table--price {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  column-gap: 1.5rem;
+  width: 100%;
+
+  text-align: right;
+  /* padding: 0 1.2rem; */
+}
+.main-exchange-container--table__table .table--price p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: right;
+}
+.main-exchange-container--table__table .table--price img {
+  /* margin-left: 1.5rem; */
+  width: 1.3rem;
+  height: 1.34rem;
+}
+
+.main-exchange-container--table > p {
+  width: 11.5rem;
+  margin: 0 auto 6.4rem auto;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  line-height: 1.45rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--warm-black);
+  background-color: var(--sof-orange);
+}
+.main-exchange-container--table > p span{
+  font-weight: 700;
 }
