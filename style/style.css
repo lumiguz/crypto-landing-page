@@ -1,4 +1,4 @@
-/* 
+/*
 1. Position
 2. Box model
 3. Typographic
@@ -41,7 +41,7 @@ header {
 .header--container {
   width: 90%;
   min-width: 2.9rem;
-  max-width: 90rem;
+  max-width: 50rem;
   height: 22rem;
   margin-top: 4rem;
   text-align: center;
@@ -94,13 +94,10 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  place-content: center;
   width: 100%;
   min-width: 32rem;
-  max-width: 90rem;
   height: auto;
-  margin: 0 auto;
   background-color: var(--just-white);
   text-align: center;
 }
@@ -108,7 +105,6 @@ main {
   width: 100%;
   height: auto;
   padding-top: 8rem;
-  padding-bottom: 3rem;
   text-align: center;
 }
 .main-exchange-container--img img {
@@ -117,10 +113,7 @@ main {
 .main-exchange-container--title {
   justify-content: center;
   min-width: 28.8rem;
-  max-width: 90rem;
   margin-top: 4.4rem;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 .main-exchange-container--title h2 {
   font-weight: 700;
@@ -142,11 +135,11 @@ main {
   color: var(--bitcoin-orange);
   margin-bottom: 1.2rem;
 }
-.main-exchange-container--table__table {
+/* .main-exchange-container--table__table {
   display: grid;
-  grid-template-columns: repeat(2, 15rem);
+  grid-template-columns: repeat(2, minmax(10rem, 15rem));
   grid-auto-rows: 4rem;
-  width: 22rem;
+  width: 95%;
   min-width: 2.9rem;
   margin: 0 auto 1.6rem auto;
   font-family: "Inter", sans-serif;
@@ -155,7 +148,7 @@ main {
   font-weight: 500;
   color: var(--grey);
   background-color: var(--off-white);
-}
+} 
 .main-exchange-container--table__table .table--name,
 .main-exchange-container--table__table .table--price {
   width: 90%;
@@ -169,13 +162,10 @@ main {
 }
 .main-exchange-container--table__table .table--price {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   column-gap: 1.5rem;
   width: 100%;
-
   text-align: right;
-  /* padding: 0 1.2rem; */
 }
 .main-exchange-container--table__table .table--price p {
   font-size: 1.4rem;
@@ -183,10 +173,9 @@ main {
   text-align: right;
 }
 .main-exchange-container--table__table .table--price img {
-  /* margin-left: 1.5rem; */
   width: 1.3rem;
   height: 1.34rem;
-}
+}*/
 
 .main-exchange-container--table > p {
   width: 11.5rem;
@@ -199,6 +188,50 @@ main {
   color: var(--warm-black);
   background-color: var(--sof-orange);
 }
-.main-exchange-container--table > p span{
+.main-exchange-container--table > p span {
   font-weight: 700;
+}
+.main-information-container {
+  width: 100%;
+  height: auto;
+  padding-top: 6.4rem;
+  padding-bottom: 4.6rem;
+  background-color: var(--black);
+}
+.main-information-container--card__first{
+    margin: 0 1.5rem 3.2rem 1.5rem;
+}
+.main-information-container--card__first h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--just-white);
+}
+.main-information-container p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: var(--sof-orange);
+}
+.main-information-container--table{
+ display: grid;
+ grid-template-columns: repeat(1, minmax(288px, 343px));
+ /* grid-auto-rows: 18.2375rem; */
+ gap: 1.6rem;
+ margin: 0 1.6rem;
+ text-align: left;
+ justify-content: center;
+  
+}
+.main-information-container--card {
+  padding: 1.8rem 1.6rem 2.2rem 1.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 0.8rem #00000029;
+  background-color: var(--warm-black);
+}
+.main-information-container--card h2{
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: var(--just-white);
 }
