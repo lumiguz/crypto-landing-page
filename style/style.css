@@ -235,3 +235,17 @@ main {
   font-weight: 700;
   color: var(--just-white);
 }
+.main-background-container{
+  width: 100%;
+  height: 38.7rem;
+  background-image: url(https://i.postimg.cc/G2DF7Pcy/bitcoinbaby.png);
+  background-size: cover;
+  background-position: center center;
+}
+.main-background-container p{
+  margin-top: 6.4rem;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--just-white);
+}
