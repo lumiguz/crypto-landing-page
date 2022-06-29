@@ -153,7 +153,8 @@ main {
   background-color: var(--off-white);
 }
 .main-exchange-container--table__table .table--name,
-.main-exchange-container--table__table .table--price {
+.main-exchange-container--table__table .table--price,
+.main-exchange-container--table__table .table-comision-price {
   border: 0.2rem solid var(--just-white);
 }
 .main-exchange-container--table__table .table--name {
@@ -188,6 +189,17 @@ main {
 }
 .main-exchange-container--table > p span {
   font-weight: 700;
+}
+.main-exchange-container--table__table .table-comision-price{
+  font-size: 1.4rem;
+  line-height: 1.694rem;
+  font-weight: 400;
+}
+.main-exchange-container--table .comision{
+  color: var(--secondary-blue);
+}
+.main-exchange-container--table .comision-value{
+  background-color: var(--soft-blue);
 }
 /* --information-- */
 .main-information-container {
@@ -397,6 +409,7 @@ main {
   cursor: pointer;
 }
 .main-questions-container--qa p {
+  margin-left: 1rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 500;
