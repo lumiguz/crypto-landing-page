@@ -190,15 +190,22 @@ main {
 .main-exchange-container--table > p span {
   font-weight: 700;
 }
-.main-exchange-container--table__table .table-comision-price{
+.main-exchange-container--table__table .table-comision-price {
+  display: flex;
+  place-content: center;
   font-size: 1.4rem;
   line-height: 1.694rem;
   font-weight: 400;
 }
-.main-exchange-container--table .comision{
+.main-exchange-container--table__table .table-comision-price p{
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+.main-exchange-container--table .comision {
   color: var(--secondary-blue);
 }
-.main-exchange-container--table .comision-value{
+.main-exchange-container--table .comision-value {
   background-color: var(--soft-blue);
 }
 /* --information-- */
