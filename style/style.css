@@ -374,11 +374,12 @@ main {
   background-image: url(https://i.postimg.cc/gjZCz0dp/arrow-right1.png);
 }
 
+
+
 /* --Question-- */
 
 .main-questions-container{
   padding-bottom: 6.7rem;
-  justify-content: center;
   background-color: var(--off-white);
 }
 .main-questions-container h2{
