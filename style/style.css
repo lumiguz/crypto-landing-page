@@ -429,3 +429,27 @@ main {
   background-image: url(https://i.postimg.cc/xj5tqYcW/arrow-down.png);
   background-repeat: no-repeat;
 }
+
+/* --FOOTER-- */
+
+footer{
+  padding: 4rem 6rem;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+.footer-container{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+.footer-container--socials{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.footer-container--logotype{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
