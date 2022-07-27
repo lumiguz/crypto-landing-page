@@ -197,7 +197,7 @@ main {
   line-height: 1.694rem;
   font-weight: 400;
 }
-.main-exchange-container--table__table .table-comision-price p{
+.main-exchange-container--table__table .table-comision-price p {
   margin: 0;
   padding: 0;
   align-self: center;
@@ -287,37 +287,31 @@ main {
   font-weight: 500;
   color: var(--grey);
 }
-.main-plan-container--card {
-  display: grid;
-  grid-template-columns: minmax(17.8%, 19rem) 19rem minmax(17.8%, 19rem);
-  column-gap: 0.8rem;
+.main-plan-container--slider {
+  display: flex;
+  column-gap: 1.8rem;
   margin: 0 auto;
-  max-width: 58.6rem;
-  justify-content: center;
+  padding: 0 1.8rem;
+  height: 32rem;
+  /* max-width: 62rem; */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
-.main-plan-container--card__left,
-.main-plan-container--card__center,
-.main-plan-container--card__right {
+
+.main-plan-container--card {
+  display: flex;
+  scroll-snap-align: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 19rem;
+  /* height: 27.2rem; */
+  margin: 2rem auto;
+  border-radius: 0.8rem;
   box-shadow: 0 0.4rem 0.8rem #59491e29;
   background-color: var(--just-white);
 }
-.main-plan-container--card__left {
-  max-width: 19rem;
-  border-top-right-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
-}
-.main-plan-container--card__center {
-  border-radius: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-plan-container--card__right {
-  max-width: 19rem;
-  border-top-left-radius: 0.8rem;
-  border-bottom-left-radius: 0.8rem;
-}
-.main-plan-container--card__center h3 {
+.main-plan-container--card h3 {
   width: 10.1rem;
   padding: 0.8rem;
   margin-top: -1.5rem;
@@ -331,7 +325,10 @@ main {
   color: var(--just-white);
   background-color: var(--bitcoin-orange);
 }
-.main-plan-container--card__center h3 + p {
+.suscription{
+  margin-top: 4.5rem;
+}
+.main-plan-container--card h3 + p, .suscription {
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
@@ -432,21 +429,21 @@ main {
 
 /* --FOOTER-- */
 
-footer{
+footer {
   padding: 4rem 6rem;
   color: var(--just-white);
   background-color: var(--bitcoin-orange);
 }
-.footer-container{
+.footer-container {
   display: flex;
   gap: 5rem;
   justify-content: center;
 }
-.footer-container--socials{
+.footer-container--socials {
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
-.footer-container--logotype{
+.footer-container--logotype {
   display: flex;
   flex-direction: column;
   justify-content: center;
