@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/tablet.css" media="(min-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,70 +50,72 @@
         <div class="main-exchange-container--title">
           <h2>Observamos todas las tasas de cambio</h2>
           <p>
-            Traemos informaci&oacute;n en tiempo real de las casas de cambio y
-            las monedas m&aacute;s importantes del mundo.
+            Traemos informaci&oacute;n en tiempo real de las casas de cambio y las monedas m&aacute;s importantes del mundo.
           </p>
         </div>
-        <div class="main-exchange-container--table">
-          <h2>Cryptomonedas</h2>
-          <div class="main-exchange-container--table__table">
-            <div class="table--name"><p>Bitcoin</p></div>
-            <div class="table--price">
-              <p>$ -307.71</p>
-              <img
-                src="https://i.postimg.cc/9MHVTVzj/trending-down.png"
-                alt="price down"
-              />
+        <div class="main-exchange-container--tables">
+          <div class="main-exchange-container--table">
+            <h2>Cryptomonedas</h2>
+            <div class="main-exchange-container--table__table">
+              <div class="table--name"><p>Bitcoin</p></div>
+              <div class="table--price">
+                <p>$ -307.71</p>
+                <img
+                  src="https://i.postimg.cc/9MHVTVzj/trending-down.png"
+                  alt="price down"
+                />
+              </div>
+              <div class="table--name"><p>Ethereum</p></div>
+              <div class="table--price">
+                <p>$ -18.26</p>
+                <img
+                  src="https://i.postimg.cc/9MHVTVzj/trending-down.png"
+                  alt="price down"
+                />
+              </div>
+              <div class="table--name"><p>BNB</p></div>
+              <div class="table--price">
+                <p>$ +1.6</p>
+                <img
+                  src="https://i.postimg.cc/j56T49Jn/trending-up.png"
+                  alt="price up"
+                />
+              </div>
+              <div class="table--name"><p>Cardano</p></div>
+              <div class="table--price">
+                <p>$ +0.04</p>
+                <img
+                  src="https://i.postimg.cc/j56T49Jn/trending-up.png"
+                  alt="price up"
+                />
+              </div>
             </div>
-            <div class="table--name"><p>Ethereum</p></div>
-            <div class="table--price">
-              <p>$ -18.26</p>
-              <img
-                src="https://i.postimg.cc/9MHVTVzj/trending-down.png"
-                alt="price down"
-              />
-            </div>
-            <div class="table--name"><p>BNB</p></div>
-            <div class="table--price">
-              <p>$ +1.6</p>
-              <img
-                src="https://i.postimg.cc/j56T49Jn/trending-up.png"
-                alt="price up"
-              />
-            </div>
-            <div class="table--name"><p>Cardano</p></div>
-            <div class="table--price">
-              <p>$ +0.04</p>
-              <img
-                src="https://i.postimg.cc/j56T49Jn/trending-up.png"
-                alt="price up"
-              />
-            </div>
+            <p>Valores en <span>$ USD</span></p>
           </div>
-          <p>Valores en <span>$ USD</span></p>
-        </div>
-        <div class="main-exchange-container--table">
-          <h2 class="comision">Comisiones</h2>
-          <div class="main-exchange-container--table__table">
-            <div class="table--name"><p>Binance</p></div>
-            <div class="table-comision-price">
-              <p>$ 12.96</p>
+          <div class="main-exchange-container--table">
+            <h2 class="comision">Comisiones</h2>
+            <div class="main-exchange-container--table__table">
+              <div class="table--name"><p>Binance</p></div>
+              <div class="table-comision-price">
+                <p>$ 12.96</p>
+              </div>
+              <div class="table--name"><p>FTX</p></div>
+              <div class="table-comision-price">
+                <p>$ 13.05</p>
+              </div>
+              <div class="table--name"><p>Kucoin</p></div>
+              <div class="table-comision-price">
+                <p>$ 14.65</p>
+              </div>
+              <div class="table--name"><p>Bitso</p></div>
+              <div class="table-comision-price">
+                <p>$ 13.14</p>
+              </div>
             </div>
-            <div class="table--name"><p>FTX</p></div>
-            <div class="table-comision-price">
-              <p>$ 13.05</p>
-            </div>
-            <div class="table--name"><p>Kucoin</p></div>
-            <div class="table-comision-price">
-              <p>$ 14.65</p>
-            </div>
-            <div class="table--name"><p>Bitso</p></div>
-            <div class="table-comision-price">
-              <p>$ 13.14</p>
-            </div>
+            <p class="comision-value">Valores en <span>$ USD</span></p>
           </div>
-          <p class="comision-value">Valores en <span>$ USD</span></p>
         </div>
+        
       </section>
       <section class="main-information-container">
         <div class="main-information-container--card__first">
@@ -182,7 +185,7 @@
         <div class="main-plan-container--slider">
           
           <article class="main-plan-container--card">
-            <!-- <h3 class="recomended">Recomendado</h3> -->
+            
             <p class="suscription">Pago Mensual</p>
             <div class="main-plan-container--card__price">
               <p class="main-plan-container--card__simbol">$</p>
